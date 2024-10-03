@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galibazz Blog</title>
+    <link rel="stylesheet" href="./output.css"> <!-- Tailwind CSS -->
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="bg-gray-800 py-2 fixed w-full text-white border-b-[1px]">
+        <nav class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <!-- Left: Logo -->
+                 <a href="#">
+                <div class="flex  items-start">
+                    <span class="text-3xl font-bold ">Gali<span class="text-[#34D399]">bazz</span></span>
+                    <span class="text-xs mt-5 ml-1 text-[#FACC15]">blog</span>
+                </div>
+              </a>
+                <!-- Center: Navigation Links -->
+                <ul class="hidden md:flex space-x-8 text-lg">
+                    <li><a href="#" class="hover:text-yellow-500 transition duration-300">Home</a></li>
+                    <li><a href="#" class="hover:text-yellow-500 transition duration-300">Jokes</a></li>
+                    <li><a href="#" class="hover:text-yellow-500 transition duration-300">Shayari</a></li>
+                    <li><a href="#" class="hover:text-yellow-500 transition duration-300">Thoughts</a></li>
+                </ul>
+
+                <!-- Right: Language Switcher -->
+                <div class="flex items-center">
+                    <div class="relative">
+                        <select id="language-switcher" class="bg-green-400 hover:bg-green-500 text-gray-900 px-3 py-1 rounded-md">
+                            <option value="en">English</option>
+                            <option value="hi">Hindi</option>
+                        </select>
+                    </div>
+                    <button id="menu-toggle" class="md:hidden ml-4 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <ul class="px-4 py-2 space-y-2 text-lg">
+                <li><a href="#" class="hover:text-yellow-500 transition duration-300">Home</a></li>
+                <li><a href="#" class="hover:text-yellow-500 transition duration-300">Jokes</a></li>
+                <li><a href="#" class="hover:text-yellow-500 transition duration-300">Shayari</a></li>
+                <li><a href="#" class="hover:text-yellow-500 transition duration-300">Thoughts</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="h-24"></div>
+    <section class="py-12 bg-gray-900">
+      <div class="container mx-auto px-4">
+          <div class="grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+              <!-- Card 1 -->
+              <div class="bg-gray-800 border border-gray-700 rounded-lg shadow-lg flex flex-col">
+                  <img src="https://i.pinimg.com/736x/4b/07/7e/4b077ea531a5c5bafbd0be122005d63c.jpg" alt="card image" class="rounded-t-lg w-full h-48 object-cover">
+                  <div class="p-4 flex flex-col justify-between">
+                      <div>
+                          <h2 class="text-xl font-bold text-white mb-1">Kabir Das ke sexy Dohe</h2>
+                          <p class="text-gray-400 text-sm mb-1">"Kabir Das ke Sexy Dohe" – old-school wisdom with a modern twist, guaranteed to make you smile and think!</p>
+                      </div>
+                      <div class="mt-2">
+                          <a href="./en/kabir-dash-ke-sexy-dohe/" class="text-green-400 inline-flex items-center hover:underline">
+                              Read More
+                              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                              </svg>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+    
+              <!-- Card 2 -->
+              <div class="bg-gray-800 border border-gray-700 rounded-lg shadow-lg flex flex-col">
+                  <img src="https://i.pinimg.com/736x/4c/19/46/4c19463eafe3632d17b1c56a4c3ab078.jpg" alt="card image" class="rounded-t-lg w-full h-48 object-cover">
+                  <div class="p-4 flex flex-col justify-between">
+                      <div>
+                          <h2 class="text-xl font-bold text-white mb-1">Double Meaning jokes</h2>
+                          <p class="text-gray-400 text-sm mb-1">Double meaning jokes that will make you blush, but with a laugh that’s hard to resist!</p>
+                      </div>
+                      <div class="mt-2">
+                          <a href="#" class="text-green-400 inline-flex items-center hover:underline">
+                              Read More
+                              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                              </svg>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+    
+              <!-- Card 3 -->
+              <div class="bg-gray-800 border border-gray-700 rounded-lg shadow-lg flex flex-col">
+                  <img src="https://i.pinimg.com/736x/c9/ed/a2/c9eda2a03b9e50dd9bb1cfba1e730626.jpg" alt="card image" class="rounded-t-lg w-full h-48 object-cover">
+                  <div class="p-4 flex flex-col justify-between">
+                      <div>
+                          <h2 class="text-xl font-bold text-white mb-1">Teacher Student Jokes</h2>
+                          <p class="text-gray-400 text-sm mb-1">Teacher-Student jokes that will crack you up, but remember, laughter’s the best way to ace your day—only on Galibazz!</p>
+                      </div>
+                      <div class="mt-2">
+                          <a href="#" class="text-green-400 inline-flex items-center hover:underline">
+                              Read More
+                              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                              </svg>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+    
+              <!-- Card 4 -->
+              <div class="bg-gray-800 border border-gray-700 rounded-lg shadow-lg flex flex-col">
+                  <img src="https://i.pinimg.com/736x/b0/54/cd/b054cdaef7a4ab7b01251a0e207bba5d.jpg" alt="card image" class="rounded-t-lg w-full h-48 object-cover">
+                  <div class="p-4 flex flex-col justify-between">
+                      <div>
+                          <h2 class="text-xl font-bold text-white mb-1">Kallu Sarabi Jokes</h2>
+                          <p class="text-gray-400 text-sm mb-1">Kallu Sarabi jokes that'll make you laugh out loud—get ready for some fun only on Galibazz!</p>
+                      </div>
+                      <div class="mt-2">
+                          <a href="#" class="text-green-400 inline-flex items-center hover:underline">
+                              Read More
+                              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+                                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                              </svg>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    
+  
+  
+  
+  
+  
+
+      <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+          <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
+            <a href="" class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+              <span class="text-3xl font-bold text-gray-100">Gali<span class="text-[#34D399]">bazz</span></span>
+            </a>
+            <p class="mt-2 text-sm text-gray-300">Welcome to GaliBazz Blog.
+              Express Yourself Freely at GaliBazz.</p>
+          </div>
+          <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-100 tracking-widest text-sm mb-3">Jokes</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-400 hover:text-gray-500">Nonveg Jokes</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-gray-500">Mixveg Jokes</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-gray-500">Veg jokes</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-gray-500">Kallu Sarabi Jokes</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-100 tracking-widest text-sm mb-3">Jokes</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-400 hover:text-gray-500">Teacher Student Jokes</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-gray-500">Double Meaning Jokes</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-gray-500">husband wife jokes</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-gray-500">life jokes</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-100 tracking-widest text-sm mb-3">Shayri</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-400 hover:text-gray-500">Kabir ke Dohe</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-gray-500">Nonveg Shayri</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-gray-500">Mixveg Shayri</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-gray-500">Veg Shayri</a>
+                </li>
+              </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+              <h2 class="title-font font-medium text-gray-100 tracking-widest text-sm mb-3">Thoughts</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-400 hover:text-gray-500">Nonveg Thoughts</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-gray-500">Mixvef thouths</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-gray-500">Story</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-gray-500">Fucking Life</a>
+                </li>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-100">
+          <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-gray-500 text-sm text-center sm:text-left">© 2024 Galibazz —
+              <a href="https://galibazz.live" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank" previewlistener="true">@Galibazz</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+              <a class="text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-gray-500">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </footer>
+      
+
+    <script>
+        // Handle language switching
+        document.getElementById('language-switcher').addEventListener('change', function () {
+            const selectedLanguage = this.value;
+            if (selectedLanguage === 'hi') {
+                window.location.href = '/hi';
+            }
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
