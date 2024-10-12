@@ -72,8 +72,9 @@
                 <div class="flex items-center">
                     <div class="relative">
                         <select id="language-switcher" class="bg-green-400 hover:bg-green-500 text-gray-900 px-3 py-1 rounded-md">
+                          <option value="hi">Hindi</option>
                             <option value="en">English</option>
-                            <option value="hi">Hindi</option>
+                            
                         </select>
                     </div>
                     <button id="menu-toggle" class="md:hidden ml-4 focus:outline-none">
@@ -305,6 +306,23 @@
           </div>
         </div>
       </footer>
+
+      <script>
+        document.getElementById('language-switcher').addEventListener('change', function() {
+            const selectedLanguage = this.value;
+            if (selectedLanguage === 'en') {
+                window.location.href = '/en/kabir-dash-ke-sexy-dohe';
+            }
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 
 
 </body>
